@@ -23,6 +23,7 @@ function resetTimer() {
     elapsedTime = 0;
     document.getElementById("display").innerText = "00:00:00.00";
     document.getElementById("laps").innerHTML = "";
+}
 
 function recordLap() {
     if (timerInterval) {
