@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch Application | SkillCraft Task 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>PRO STOPWATCH</h1>
+            <p>SkillCraft Technology - Task 02</p>
+        </header>
+
+        <main class="stopwatch-card">
+            <!-- Time Display -->
+            <div id="display">00:00:00.00</div>
+
+            <!-- Controls -->
+            <div class="controls">
+                <button id="startBtn" onclick="startTimer()">Start</button>
+                <button id="pauseBtn" onclick="pauseTimer()">Pause</button>
+                <button id="lapBtn" onclick="recordLap()">Lap</button>
+                <button id="resetBtn" onclick="resetTimer()">Reset</button>
+            </div>
+
+            <!-- Lap Times List -->
+            <div class="lap-container">
+                <h3>Lap Times</h3>
+                <ul id="laps"></ul>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
